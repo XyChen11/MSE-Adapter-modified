@@ -32,6 +32,7 @@ This project is a modified version of the [MSE-Adapter](https://github.com/AZYou
 3. **Configure Training**
 
    - Edit configuration files in config for your task.
+   - Edit the augments in run.py file to change some hyperparameters.
 4. **Run Training**
 
    - For DDP multi-GPU training:
