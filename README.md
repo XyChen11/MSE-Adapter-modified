@@ -25,6 +25,14 @@ This project is a modified version of the [MSE-Adapter](https://github.com/AZYou
    - Python 3.8+
    - PyTorch (with CUDA support)
    - Other required packages (see requirements.txt or install as needed)
+     ```
+     git clone https://github.com/Chandler-Chen11/MSE-Adapter-modified.git
+     cd MSE-Adapter-modified
+     conda create --name MSE-Adapter-modified python=3.10.13
+     conda activate MSE-Adapter-modified
+     pip install -r requirements.txt
+     # or conda env create -f environment.yml
+     ```
 2. **Prepare Data**
 
    - Place your datasets in the data directory.
