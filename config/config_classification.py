@@ -37,7 +37,7 @@ class ConfigClassification():
                     # (text, audio, video)
                     'feature_dims': (2048, 64, 64),
                     'train_samples': 5240,
-                    'num_classes': 3,
+                    'num_classes': 3,  # since this work uses LLM to directly predict the sentiment intensity, when we want to use MLP head to predict the sentiment intensity, we will set num_classes to 6, which is the same as the number of labels in the original dataset
                     'language': 'en',
                     'KeyEval': 'weight_F1'
                 }
@@ -49,7 +49,7 @@ class ConfigClassification():
                     # (text, audio, video)
                     'feature_dims': (2048, 64, 64),
                     'train_samples': 9992,
-                    'num_classes': 3,
+                    'num_classes': 3,  # since this work uses LLM to directly predict the sentiment intensity, when we want to use MLP head to predict the sentiment intensity, we will set num_classes to 6, which is the same as the number of labels in the original dataset
                     'language': 'en',
                     'KeyEval': 'weight_F1'
                 }
@@ -61,7 +61,7 @@ class ConfigClassification():
                     'seq_lens': (78, 543, 16), # (text, audio, video)
                     'feature_dims': (2048, 1024, 2048), # (text, audio, video)
                     'train_samples': 16326,
-                    'num_classes': 3,
+                    'num_classes': 3,# since this work uses LLM to directly predict the sentiment intensity, when we want to use MLP head to predict the sentiment intensity, we will set num_classes to the number of labels in the original dataset
                     'language': 'cn',
                     'KeyEval': 'weight_F1',
                 }
